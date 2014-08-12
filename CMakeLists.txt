@@ -359,9 +359,9 @@ endif(UNIX)
 
 if (CMAKE_COMPILER_IS_GNUCC OR CMAKE_COMPILER_IS_GNUCXX)
     if (UNIX)
-	set( CMAKE_C_FLAGS "-Wall -Werror -O4 -fvisibility=hidden ${CMAKE_C_FLAGS}" )
+	set( CMAKE_C_FLAGS "${CMAKE_C_FLAGS}" )
     else(UNIX)
-	set( CMAKE_C_FLAGS "-Wall -O4 -fvisibility=hidden ${CMAKE_C_FLAGS}" )
+	set( CMAKE_C_FLAGS "${CMAKE_C_FLAGS}" )
     endif(UNIX)
 endif ()
 
